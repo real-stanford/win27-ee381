@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Win27-EE/CS 381</title>
+<meta name="description" content="Stanford EE/CS 381, Sensorimotor Learning for Embodied Agents, Winter 2027.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --cardinal:#8c1515; --ink:#212121; --rule:#d9d9d9; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:var(--ink); font-family:Bitter, Georgia, serif; font-size:11pt; line-height:1.6; }
+  .preview-note { background:#f1f1f1; color:#555; font:12px/1.4 Arial, sans-serif; text-align:center; padding:4px 16px; }
+  .topbar { background:var(--cardinal); color:#fff; font-family:Montserrat, Arial, sans-serif; font-size:15pt; line-height:1.33; padding:14px 28px; }
+  .hero { padding:96px 16px 110px; text-align:center; }
+  .hero h1 { margin:0 auto; max-width:1100px; font-family:Montserrat, Arial, sans-serif; font-weight:700; color:var(--cardinal); font-size:clamp(30px, 5.2vw, 49pt); line-height:1.2; }
+  main { max-width:1160px; margin:0 auto; padding:0 70px 80px; }
+  h2 { font-family:Bitter, Georgia, serif; font-weight:700; font-size:21pt; line-height:1.25; color:var(--ink); margin:56px 0 8px; }
+  p { margin:15px 0; }
+  ul { list-style:square; padding-left:24px; margin:6px 0; }
+  li { margin:4px 0; } li > ul { margin-top:4px; }
+  a { color:inherit; text-decoration:underline; }
+  .table-wrap { overflow-x:auto; border:1px solid #e0e0e0; margin:14px 0; }
+  table { border-collapse:collapse; width:100%; font:13px/1.35 Arial, sans-serif; color:#333; }
+  th, td { border:1px solid var(--rule); padding:4px 6px; text-align:left; vertical-align:bottom; }
+  td:first-child, th:first-child { white-space:nowrap; }
+  th { background:var(--cardinal); color:#fff; font-weight:700; }
+  tr.lecture td { color:var(--cardinal); font-weight:700; }
+  tr.milestone td { background:var(--cardinal); color:#fff; font-weight:700; }
+  footer { color:#777; font:12px Arial, sans-serif; text-align:center; padding:24px 16px; }
+  @media (max-width:700px) { main { padding:0 16px 60px; } .hero { padding:56px 16px 64px; } .topbar { padding:12px 16px; } h2 { margin-top:40px; } }
+</style></head>
+<body>
+<div class="topbar">Win27-EE/CS 381</div>
+<section class="hero"><h1>EE/CS 381:
+Sensorimotor Learning for Embodied Agents</h1></section>
+<main>
+
+<h2 id="overview">Overview</h2>
+<p>This is an advanced course focusing on modern machine-learning
+algorithms for autonomous robots as embodied intelligent agents. It
+covers advanced topics that center around what embodied AI is and how it
+differs from internet AI: how embodied agents perceive their environment
+from raw sensory data, make decisions, and continually adapt to the
+physical world through both hardware and software improvements. By the
+end of the course, we hope to prepare you for conducting independent
+research in this area: knowing how to formulate the problem, design the
+algorithm, critically validate the idea through experimental designs,
+and finally, clearly communicate the findings in both writing and
+presentation. Students are expected to read, present, and debate the
+latest research papers on embodied AI, as well as obtain hands-on
+experience through a capstone project.</p>
+<ul>
+<li>Instructor: <a href="https://shurans.github.io">Shuran Song</a> (<a
+href="mailto:shuran@stanford.edu">shuran@stanford.edu</a>)</li>
+<li>TA: Yihuai Gao (<a
+href="mailto:yihuai@stanford.edu">yihuai@stanford.edu</a>)</li>
+<li>Time: Fridays 9:30-11:20 am, January 8 to March 12, 2027</li>
+<li>Location: Hewlett Teaching Center 102</li>
+<li>Units: 3 (letter grade or credit/no credit); cross-listed as EE 381
+and CS 381</li>
+</ul>
+<h2 id="announcement">Announcement</h2>
+<ul>
+<li>This is a discussion-based class; in-person attendance is required
+for all sessions.</li>
+<li>Enrollment is limited to 30 students and requires an application
+through the <a href="https://forms.gle/ibjwMyW9VWaqr7kt9">enrollment
+form</a> (deadline November 20, 2026). Admitted students receive a
+permission code; Axess enrollment opens December 2, 2026.</li>
+</ul>
+<h2 id="pre-requisites">Pre-requisites</h2>
+<ul>
+<li>Familiarity with basic linear algebra.</li>
+<li>Knowledge of basic machine learning, computer vision, and
+robotics.</li>
+<li>Recommended: EE 160A, EE 260A or CS 237A (Principles of Robot
+Autonomy I).</li>
+<li>If you are not sure whether you are ready for the course, please
+check with the course instructor.</li>
+</ul>
+<h2 id="grading">Grading</h2>
+<ul>
+<li>Presentation &amp; Discussion (50 %)
+<ul>
+<li>In-class discussion (25%): each week every student takes one of 8
+assigned roles for the paper (4 students per role):
+<ul>
+<li>Motivator: the goal of the paper and why it matters</li>
+<li>Historian: what has been done before</li>
+<li>Method presenter</li>
+<li>Method reviewer</li>
+<li>Result presenter</li>
+<li>Result reviewer</li>
+<li>Learner / investigator: what surprised you, what did you learn</li>
+<li>Extender: what else could be done, how to improve</li>
+</ul></li>
+<li>Slack discussion (25%): participate in the discussion on Slack</li>
+</ul></li>
+<li>Course project (50 %)
+<ul>
+<li>Project proposal (20%), presented in class on February 5</li>
+<li>Final project presentation (20%), in class on March 12</li>
+<li>Project write-up (10%)</li>
+</ul></li>
+</ul>
+<h2 id="schedule">Schedule</h2>
+<p>This schedule is preliminary and subject to change as the term
+evolves. All sessions meet Fridays 9:30-11:20 am in Hewlett Teaching
+Center 102. There is no final exam.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr class="header">
+<th>Date</th>
+<th>Week</th>
+<th>Session</th>
+<th>Paper</th>
+</tr>
+</thead>
+<tbody>
+<tr class="lecture">
+<td>Jan 8</td>
+<td>1</td>
+<td>Intro + logistics</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Jan 15</td>
+<td>2</td>
+<td>Discussion 1: Policy learning</td>
+<td>Learning Fine-Grained Bimanual Manipulation with Low-Cost
+Hardware</td>
+</tr>
+<tr class="odd">
+<td>Jan 22</td>
+<td>3</td>
+<td>Discussion 2: Policy learning</td>
+<td>When Do Discrete Actions Make Good Continuous Controllers?</td>
+</tr>
+<tr class="even">
+<td>Jan 29</td>
+<td>4</td>
+<td>Discussion 3: Learning for locomotion</td>
+<td>Learning to Walk in Minutes Using Massively Parallel Deep
+Reinforcement Learning</td>
+</tr>
+<tr class="milestone">
+<td>Feb 5</td>
+<td>5</td>
+<td>Project proposals</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Feb 12</td>
+<td>6</td>
+<td>Discussion 4: Learning for locomotion</td>
+<td>BeyondMimic: From Motion Tracking to Versatile Humanoid Control via
+Guided Diffusion</td>
+</tr>
+<tr class="odd">
+<td>Feb 19</td>
+<td>7</td>
+<td>Discussion 5: Multisensory learning</td>
+<td>T-Rex: Tactile-Reactive Dexterous Manipulation</td>
+</tr>
+<tr class="even">
+<td>Feb 26</td>
+<td>8</td>
+<td>Discussion 6: Video and world models</td>
+<td>Fast-WAM: Do World Action Models Need Test-time Future
+Imagination?</td>
+</tr>
+<tr class="odd">
+<td>Mar 5</td>
+<td>9</td>
+<td>Discussion 7: Data and data quality</td>
+<td>What Matters in Learning from Large-Scale Datasets for Robot
+Manipulation</td>
+</tr>
+<tr class="milestone">
+<td>Mar 12</td>
+<td>10</td>
+<td>Project presentations</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Key dates: add/drop deadline (Final Study List) Friday January 22, 5
+pm; grading-basis change and withdrawal deadline Friday February 26, 5
+pm.</p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://pytorch.org/tutorials/">PyTorch tutorial</a></li>
+<li><a
+href="https://spinningup.openai.com/en/latest/spinningup/keypapers.html">OpenAI
+Spinning Up in Deep RL</a></li>
+<li><a
+href="https://docs.google.com/document/d/10sXEhzFRSnvFcl3XxNGhnD4N2SedqwdAvK3dsihxVUA/edit#heading=h.2ye70wns7io3">PyBullet
+Quickstart Guide</a></li>
+</ul>
+
+</main>
+<footer>EE/CS 381 &middot; Stanford University &middot; Winter 2027</footer>
+</body></html>

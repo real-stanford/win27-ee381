@@ -20,7 +20,7 @@
   a { color:inherit; text-decoration:underline; }
   .table-wrap { overflow-x:auto; border:1px solid #e0e0e0; margin:14px 0; }
   table { border-collapse:collapse; width:100%; font:13px/1.35 Arial, sans-serif; color:#333; }
-  th, td { border:1px solid var(--rule); padding:4px 6px; text-align:left; vertical-align:bottom; }
+  th, td { border:1px solid var(--rule); padding:4px 6px; text-align:left; vertical-align:top; }
   td:first-child, th:first-child { white-space:nowrap; }
   th { background:var(--cardinal); color:#fff; font-weight:700; }
   tr.lecture td { color:var(--cardinal); font-weight:700; }
@@ -100,75 +100,135 @@ Center 102. There is no final exam.</p>
 <thead>
 <tr class="header">
 <th>Date</th>
-<th>Week</th>
-<th>Session</th>
-<th>Paper</th>
+<th>Topic</th>
+<th>Main paper</th>
+<th>Related works</th>
 </tr>
 </thead>
 <tbody>
 <tr class="lecture">
 <td>Jan 8</td>
-<td>1</td>
-<td>Intro + logistics</td>
+<td>Intro + Logistics</td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
 <td>Jan 15</td>
-<td>2</td>
-<td>Discussion 1: Policy learning</td>
-<td>Learning Fine-Grained Bimanual Manipulation with Low-Cost
-Hardware</td>
+<td>Policy Learning</td>
+<td>Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
+(Zhao et al., RSS 2023)<br><a
+href="https://arxiv.org/abs/2304.13705">Paper</a> · <a
+href="https://tonyzhaozh.github.io/aloha/">Website</a></td>
+<td>Mobile ALOHA: Learning Bimanual Mobile Manipulation with Low-Cost
+Whole-Body Teleoperation (Fu, Zhao, Finn, CoRL 2024)<br><a
+href="https://arxiv.org/abs/2401.02117">Paper</a> · <a
+href="https://mobile-aloha.github.io/">Website</a><br><br>Universal
+Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild
+Robots (Chi et al., RSS 2024)<br><a
+href="https://arxiv.org/abs/2402.10329">Paper</a> · <a
+href="https://umi-gripper.github.io/">Website</a></td>
 </tr>
 <tr class="odd">
 <td>Jan 22</td>
-<td>3</td>
-<td>Discussion 2: Policy learning</td>
-<td>When Do Discrete Actions Make Good Continuous Controllers?</td>
+<td>Policy Learning</td>
+<td>When Do Discrete Actions Make Good Continuous Controllers? (Yi et
+al., 2026)<br><a href="https://arxiv.org/abs/2610.20429">Paper</a> · <a
+href="https://iscoyizj.github.io/discrete-action-website/">Website</a></td>
+<td>From Tokens to Actions: Discrete Flow Matching for Visuomotor Policy
+Learning (2025)<br><a
+href="https://openreview.net/forum?id=Vg3K3ZEi8B">Paper</a><br><br>Diffusion
+Policy: Visuomotor Policy Learning via Action Diffusion (Chi et al., RSS
+2023)<br><a href="https://arxiv.org/abs/2303.04137">Paper</a> · <a
+href="https://diffusion-policy.cs.columbia.edu/">Website</a></td>
 </tr>
 <tr class="even">
 <td>Jan 29</td>
-<td>4</td>
-<td>Discussion 3: Learning for locomotion</td>
+<td>Learning for Locomotion</td>
 <td>Learning to Walk in Minutes Using Massively Parallel Deep
-Reinforcement Learning</td>
+Reinforcement Learning (Rudin et al., CoRL 2021)<br><a
+href="https://arxiv.org/abs/2109.11978">Paper</a> · <a
+href="https://leggedrobotics.github.io/legged_gym/">Website</a></td>
+<td>Walk These Ways: Tuning Robot Control for Generalization with
+Multiplicity of Behavior (Margolis &amp; Agrawal, CoRL 2022)<br><a
+href="https://arxiv.org/abs/2212.03238">Paper</a> · <a
+href="https://gmargo11.github.io/walk-these-ways/">Website</a><br><br>Learning
+Quadrupedal Locomotion over Challenging Terrain (Lee et al., Science
+Robotics 2020)<br><a href="https://arxiv.org/abs/2010.11251">Paper</a> ·
+<a
+href="https://leggedrobotics.github.io/rl-blindloco/">Website</a></td>
 </tr>
 <tr class="milestone">
 <td>Feb 5</td>
-<td>5</td>
-<td>Project proposals</td>
+<td>Project Proposal</td>
+<td></td>
 <td></td>
 </tr>
 <tr class="even">
 <td>Feb 12</td>
-<td>6</td>
-<td>Discussion 4: Learning for locomotion</td>
+<td>Learning for Locomotion</td>
 <td>BeyondMimic: From Motion Tracking to Versatile Humanoid Control via
-Guided Diffusion</td>
+Guided Diffusion (Liao et al., 2025)<br><a
+href="https://arxiv.org/abs/2508.08241">Paper</a> · <a
+href="https://beyondmimic.github.io/">Website</a></td>
+<td>DeepMimic: Example-Guided Deep Reinforcement Learning of
+Physics-Based Character Skills (Peng et al., SIGGRAPH 2018)<br><a
+href="https://arxiv.org/abs/1804.02717">Paper</a> · <a
+href="https://xbpeng.github.io/projects/DeepMimic/index.html">Website</a><br><br>SONIC:
+Supersizing Motion Tracking for Natural Humanoid Whole-Body Control
+(NVIDIA, 2025)<br><a href="https://arxiv.org/abs/2511.07820">Paper</a> ·
+<a
+href="https://nvlabs.github.io/GEAR-SONIC/">Website</a><br><br>SuperMimic:
+Scaling Humanoid Whole-Body Control with One Differentiable World Model
+(Liao et al., 2026)<br><a
+href="https://arxiv.org/abs/2610.28480">Paper</a></td>
 </tr>
 <tr class="odd">
 <td>Feb 19</td>
-<td>7</td>
-<td>Discussion 5: Multisensory learning</td>
-<td>T-Rex: Tactile-Reactive Dexterous Manipulation</td>
+<td>Multisensory Learning</td>
+<td>T-Rex: Tactile-Reactive Dexterous Manipulation (Niu et al.,
+2026)<br><a href="https://arxiv.org/abs/2606.17055">Paper</a> · <a
+href="https://tactile-reactive-dexterous.github.io/">Website</a></td>
+<td>TouchWorld: A Predictive and Reactive Tactile Foundation Model for
+Dexterous Manipulation (2026)<br><a
+href="https://arxiv.org/abs/2607.07287">Paper</a> · <a
+href="https://phanes-lab.github.io/TouchWorld-website/">Website</a><br><br>Reactive
+Diffusion Policy: Slow-Fast Visual-Tactile Policy Learning for
+Contact-Rich Manipulation (Xue et al., RSS 2025)<br><a
+href="https://arxiv.org/abs/2503.02881">Paper</a> · <a
+href="https://reactive-diffusion-policy.github.io/">Website</a></td>
 </tr>
 <tr class="even">
 <td>Feb 26</td>
-<td>8</td>
-<td>Discussion 6: Video and world models</td>
-<td>Fast-WAM: Do World Action Models Need Test-time Future
-Imagination?</td>
+<td>Video and World Model</td>
+<td>Fast-WAM: Do World Action Models Need Test-time Future Imagination?
+(Yuan et al., 2026)<br><a
+href="https://arxiv.org/abs/2603.16666">Paper</a> · <a
+href="https://yuantianyuan01.github.io/FastWAM/">Website</a></td>
+<td>Unified Video Action Model (Li et al., RSS 2025)<br><a
+href="https://arxiv.org/abs/2503.00200">Paper</a> · <a
+href="https://unified-video-action-model.github.io/">Website</a><br><br>Efficient
+World Action Model Inference with Adaptive Intermediate States
+(2026)<br><a href="https://arxiv.org/abs/2609.34608">Paper</a></td>
 </tr>
 <tr class="odd">
 <td>Mar 5</td>
-<td>9</td>
-<td>Discussion 7: Data and data quality</td>
+<td>Data and Data Quality</td>
 <td>What Matters in Learning from Large-Scale Datasets for Robot
-Manipulation</td>
+Manipulation (Saxena et al., ICLR 2025)<br><a
+href="https://arxiv.org/abs/2506.13536">Paper</a> · <a
+href="https://robo-mimiclabs.github.io/">Website</a></td>
+<td>What Matters in Learning from Offline Human Demonstrations for Robot
+Manipulation (Mandlekar et al., CoRL 2021)<br><a
+href="https://arxiv.org/abs/2108.03298">Paper</a> · <a
+href="https://robomimic.github.io/">Website</a><br><br>Re-Mix:
+Optimizing Data Mixtures for Large Scale Imitation Learning (Hejna et
+al., CoRL 2024)<br><a
+href="https://arxiv.org/abs/2408.14037">Paper</a></td>
 </tr>
 <tr class="milestone">
 <td>Mar 12</td>
-<td>10</td>
-<td>Project presentations</td>
+<td>Project Presentation</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
